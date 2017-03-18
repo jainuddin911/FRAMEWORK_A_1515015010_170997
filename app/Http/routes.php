@@ -14,7 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/public', function(){
-	return "Jainuddin\n1515015010";
-});
+
+Route::get('pengguna','PenggunaController@awal');
+Route::get('pengguna/tambah','PenggunaController@tambah');
+Route::get('ruangan','RuanganController@awal');
+Route::get('ruangan/tambah','RuanganController@tambah');
+Route::get('matakuliah','MatakuliahController@awal');
+Route::get('matakuliah','MatakuliahController@tambah');
+
 
